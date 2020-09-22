@@ -27,12 +27,12 @@ public class Product{
 		this.price = price;
 	}
 	
-	public static boolean staticProductPredicate(Product p) {
-		return p.getPrice() >= 100;
+	public static String staticUpperCaseName(Product p) {
+		return p.getName().toUpperCase();
 	}
 	
-	public boolean productPredicate() {
-		return this.price >= 100;
+	public String nonStaticUpperCaseName() {
+		return this.getName().toUpperCase();
 	}
 	
 	@Override
